@@ -4,6 +4,7 @@ import "reactflow/dist/style.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../context/store";
 import dagre from "dagre";
+import { Link } from "react-router-dom";
 
 const MindMap = () => {
   const dispatch = useDispatch();
@@ -78,7 +79,7 @@ const MindMap = () => {
   });
 
   return (<>
-  <a className="btn" href="/">Home</a>
+  <Link className="btn" href="/">Home</Link>
     <div style={{ width: "100%", height: "500px", border: "1px solid #ddd", borderRadius: 8 }}>
         
       <ReactFlow nodes={positionedNodes} edges={edges} fitView>
