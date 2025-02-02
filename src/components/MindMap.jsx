@@ -79,7 +79,7 @@ const MindMap = () => {
   });
 
   return (<>
-  <Link className="btn" href="/">Home</Link>
+  <Link className="btn" to="/">Home</Link>
     <div style={{ width: "100%", height: "500px", border: "1px solid #ddd", borderRadius: 8 }}>
         
       <ReactFlow nodes={positionedNodes} edges={edges} fitView>
