@@ -1,19 +1,21 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainApp from "./MainApp";
 import MindMap from "./components/MindMap";
 
 
 const App = () => {
   return <>
-  <BrowserRouter>
-    <Routes>
+<Router>
+<Routes>
       <Route path="/" element={<MainApp />} />
       <Route path="/mindmap" element={<MindMap />}>
         
       </Route>
     </Routes>
-  </BrowserRouter>
+</Router>
+
+  
   </>
 };
 
